@@ -16,11 +16,11 @@ public:
             return root;
         }
 
-        if (val < root->left && root->left != NULL)
+        if (val < root->val && root->left != NULL)
         {
             return searchBST(root->left, val);
         }
-        else if (val > root->right && root->right != NULL)
+        else if (val > root->val && root->right != NULL)
         {
             return searchBST(root->right, val);
         }
